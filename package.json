@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "bourbon": "^4.2.6",
+    "bourbon-neat": "^1.7.2",
     "gulp-jshint": "^2.0.0",
     "normalize.scss": "^0.1.0"
   }

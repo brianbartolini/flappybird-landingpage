@@ -1,23 +1,18 @@
 @import "normalize";
 @import "base/base";
-@import "base/base";
-
 
 $tablet: 'min-width: 768px';
 $desktop: 'min-width: 1024px';
 $phone: 'min-width: 360px';
 
-header{
-  width: 100%;
-@media screen and ($tablet){
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto;
-  font-size: 5rem;
-  color: white;
-  }
+html {
+	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
-
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 
 body{
   color: $font-color;
@@ -28,52 +23,37 @@ body{
   text-align: center;
 }
 
-nav {
+.navbar-default{
+  background-color: $nav-color;
+  border-color: $nav-color;
+  position: fixed;
   width: 100%;
-  background-color: #9CDDC8;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  margin-top: -5.4rem;
+  z-index: 9999;
+  .navbar-brand{
+    color: white;
+  }
 
-ul{
-  text-align: right;
-  margin-right: .5rem
 }
 
-li {
-  display: inline-block;
-  color: white;
-  padding-right: 1rem;
-  }
-a{
-  text-decoration: none;
-  color: white;
-  }
-}
-
-header{
-    margin-top: 2rem;
+.title{
     font-size: 4rem;
     font-weight: 700;
     color: $header-color;
+
+    h1{
+      padding-top: 5rem;
+    }
 }
 
-.intro{
-  margin-top: 2rem;
-  font-size: 2rem;
-  text-shadow: $text-shadow;
-}
+.col-md-4{
 
-.features{
-  padding: 2rem;
-  background-color: $featuresbackground;
-
-ul{
-  list-style: none;
-  margin-right: 2.5rem;
-  }
-h2{
-  color: $appinfocolor;
-  font-size: 2.5rem;
+  h2{
+    color: $appinfocolor;
+    font-size: 2.5rem;
+    }
+  p{
+    text-align: left;
   }
 }
 

@@ -356,15 +356,13 @@ td,
 th {
   padding: 0; }
 
-header {
-  width: 100%; }
-  @media screen and (min-width: 768px) {
-    header {
-      width: 90%;
-      max-width: 960px;
-      margin: 0 auto;
-      font-size: 5rem;
-      color: white; } }
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 body {
   color: #FFFFFF;
@@ -374,42 +372,29 @@ body {
   margin: 0px;
   text-align: center; }
 
-nav {
-  width: 100%;
+.navbar-default {
   background-color: #9CDDC8;
-  padding-top: .5rem;
-  padding-bottom: .5rem; }
-  nav ul {
-    text-align: right;
-    margin-right: .5rem; }
-  nav li {
-    display: inline-block;
-    color: white;
-    padding-right: 1rem; }
-  nav a {
-    text-decoration: none;
+  border-color: #9CDDC8;
+  position: fixed;
+  width: 100%;
+  margin-top: -5.4rem;
+  z-index: 9999; }
+  .navbar-default .navbar-brand {
     color: white; }
 
-header {
-  margin-top: 2rem;
+.title {
   font-size: 4rem;
   font-weight: 700;
   color: #633D2E; }
+  .title h1 {
+    padding-top: 5rem; }
 
-.intro {
-  margin-top: 2rem;
-  font-size: 2rem;
-  text-shadow: 1.5px 1.5px #383838; }
+.col-md-4 h2 {
+  color: #633D2E;
+  font-size: 2.5rem; }
 
-.features {
-  padding: 2rem;
-  background-color: #F7AF63; }
-  .features ul {
-    list-style: none;
-    margin-right: 2.5rem; }
-  .features h2 {
-    color: #633D2E;
-    font-size: 2.5rem; }
+.col-md-4 p {
+  text-align: left; }
 
 .calltotry {
   padding: 3.5rem;

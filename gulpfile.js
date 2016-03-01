@@ -10,6 +10,7 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
+var neat = require('node-neat').includePaths;
 
 gulp.task('jshint', function() {
   return gulp.src('site/js/*.js')
