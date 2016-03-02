@@ -16,7 +16,7 @@ html {
 
 body{
   color: $font-color;
-  background-color: $background-color;
+  background-color: $footercolor;
   font-family: $opensans-font;
   padding: 0px;
   margin: 0px;
@@ -39,11 +39,18 @@ body{
 .title{
     font-size: 4rem;
     font-weight: 700;
-    color: $header-color;
+    color: $font-color;
 
     h1{
-      padding-top: 5rem;
-    }
+		padding-top: 4rem;
+		text-shadow: $text-shadow;
+		}
+
+		p{
+			margin-top: -2rem;
+			font-weight: 500;
+		}
+
 }
 
 .col-md-4{
@@ -51,15 +58,18 @@ body{
   h2{
     color: $appinfocolor;
     font-size: 2.5rem;
+		font-weight: 700;
     }
   p{
     text-align: left;
+		color: #444444;
   }
 }
 
 .calltotry{
+		margin-top: 5rem;
     padding: 3.5rem;
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: #9CDDC8;
     a{
     text-decoration: none;
@@ -70,6 +80,6 @@ body{
 }
 
 footer{
-    padding: 3rem;
+    padding: 5rem;
     background-color: $footercolor;
 }

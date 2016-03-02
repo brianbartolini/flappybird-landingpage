@@ -366,7 +366,7 @@ html {
 
 body {
   color: #FFFFFF;
-  background-color: #DDD9AB;
+  background-color: #BFD8AD;
   font-family: "Open Sans", sans-serif;
   padding: 0px;
   margin: 0px;
@@ -385,20 +385,27 @@ body {
 .title {
   font-size: 4rem;
   font-weight: 700;
-  color: #633D2E; }
+  color: #FFFFFF; }
   .title h1 {
-    padding-top: 5rem; }
+    padding-top: 4rem;
+    text-shadow: 1.5px 1.5px #383838; }
+  .title p {
+    margin-top: -2rem;
+    font-weight: 500; }
 
 .col-md-4 h2 {
   color: #633D2E;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  font-weight: 700; }
 
 .col-md-4 p {
-  text-align: left; }
+  text-align: left;
+  color: #444444; }
 
 .calltotry {
+  margin-top: 5rem;
   padding: 3.5rem;
-  font-size: 2rem;
+  font-size: 3rem;
   background-color: #9CDDC8; }
   .calltotry a {
     text-decoration: none;
@@ -407,5 +414,5 @@ body {
     text-shadow: 1.5px 1.5px #383838; }
 
 footer {
-  padding: 3rem;
+  padding: 5rem;
   background-color: #BFD8AD; }
