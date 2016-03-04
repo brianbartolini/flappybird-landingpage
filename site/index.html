@@ -9,6 +9,7 @@
     <style>
     html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}footer,nav,section{display:block}a{background-color:transparent}h1{font-size:2em;margin:0.67em 0}img{border:0}button{color:inherit;font:inherit;margin:0}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{border:0;padding:0}html{box-sizing:border-box;margin:0px;padding:0px}*,*:before,*:after{box-sizing:inherit}body{color:#FFFFFF;background-color:#BFD8AD;font-family:"Open Sans", sans-serif;padding:0px;margin:0px;text-align:center}.navbar-default{background-color:#9CDDC8;border-color:#9CDDC8;position:fixed;width:100%;margin-top:-5.4rem;z-index:9999}.navbar-default .navbar-brand{color:white}.title{font-size:4rem;font-weight:700;color:#FFFFFF}.title h1{padding-top:4rem;text-shadow:1.5px 1.5px #383838}.title p{margin-top:-2rem;font-weight:500}.col-md-4 h2{color:#633D2E;font-size:2.5rem;font-weight:700}.col-md-4 p{text-align:left;color:#444444}.calltotry{margin-top:5rem;padding:3.5rem;font-size:3rem;background-color:#9CDDC8}.calltotry a{text-decoration:none;color:#FFFFFF;font-weight:700;text-shadow:1.5px 1.5px #383838}footer{padding:5rem;background-color:#BFD8AD}
     </style>
+    <script src="js/picturefill.js" async></script>
 
 </head>
 
@@ -38,6 +39,11 @@
 
   <div class="title">
     <h1> Flappy Bird</h1>
+    <picture class="flappybirdimg">
+      <source srcset="img/Angry_Bird_red_large.png" media="(min-width: 1000px)">
+        <source srcset="img/Angry_Bird_red_medium.png" media="(min-width: 800px)">
+          <img srcset="img/Angry_Bird_red_small.png" alt="flappybird">
+      </picture>
     <p> App Information </p>
   </div>
 
@@ -88,6 +94,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+
 <!-- I chose defer because I want for the browser to wait until the site's HTML is fully parsed before doing any Javascript. -->
 <script defer src= "js/main.js"></script>
 
